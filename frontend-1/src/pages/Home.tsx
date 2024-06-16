@@ -7,7 +7,12 @@ const Home = () => {
     <>
       <section
         id="home"
-        className="h-screen flex items-center justify-center bg-gray-200"
+        className="h-screen flex items-center justify-center"
+        style={{
+          backgroundColor: "crimson",
+          margin: "90px",
+          border: "1px solid #ccc",
+        }}
       >
         <div className="text-center">
           <img
@@ -21,7 +26,12 @@ const Home = () => {
       </section>
       <section
         id="profile"
-        className="h-screen flex items-center justify-center bg-gray-200"
+        className="h-screen flex items-center justify-center"
+        style={{
+          backgroundColor: "crimson",
+          margin: "90px",
+          border: "1px solid #ccc",
+        }}
       >
         <div className="text-center">
           <h1 className="text-4xl">Profile</h1>
@@ -31,7 +41,12 @@ const Home = () => {
       </section>
       <section
         id="projects"
-        className="h-screen flex items-center justify-center bg-gray-200"
+        className="h-screen flex items-center justify-center"
+        style={{
+          backgroundColor: "crimson",
+          margin: "90px",
+          border: "1px solid #ccc",
+        }}
       >
         <div className="text-center">
           <h1 className="text-4xl mb-8">Projects</h1>
@@ -45,7 +60,12 @@ const Home = () => {
       </section>
       <section
         id="experience"
-        className="h-screen flex items-center justify-center bg-gray-200"
+        className="h-screen flex items-center justify-center"
+        style={{
+          backgroundColor: "crimson",
+          margin: "90px",
+          border: "1px solid #ccc",
+        }}
       >
         <div className="text-center">
           <h1 className="text-4xl mb-8">Experience</h1>
@@ -58,7 +78,12 @@ const Home = () => {
       </section>
       <section
         id="cv"
-        className="h-screen flex items-center justify-center bg-gray-200"
+        className="h-screen flex items-center justify-center"
+        style={{
+          backgroundColor: "crimson",
+          margin: "90px",
+          border: "1px solid #ccc",
+        }}
       >
         <div className="text-center">
           <h1 className="text-4xl mb-8">Curriculum Vitae</h1>
