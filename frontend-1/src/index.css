@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-custom-bg;
+}
+
+/* body {
+  background-color: #17212F;
+} */
 
 /* In your Tailwind CSS file or in a global CSS file */
 .nav-link {
