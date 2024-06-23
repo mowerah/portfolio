@@ -3,84 +3,43 @@ import { Link as ScrollLink } from "react-scroll";
 import profileImage from "../assets/profile.jpeg"; // Import profile image
 import Header from "../components/Header"; // Import Header component
 import Footer from "../components/Footer"; // Import Footer component
+import Profile from "./Profile";
+import Projects from "./Projects";
+import Experience from "./Experience";
+import CV from "./CV";
 
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow">
-        <section
-          id="home"
-          className="h-screen flex items-center justify-center"
-        >
-          <div className="text-center">
-            <img
-              src={profileImage}
-              alt="Profile"
-              className="rounded-full w-32 h-32 mx-auto mb-4"
-            />
-            <h1 className="text-white text-4xl">Home Page</h1>
-            <p className="text-white text-xl mt-2">Software Engineer</p>
-          </div>
-        </section>
-        <section
-          id="profile"
-          className="h-screen flex items-center justify-center"
-        >
-          <div className="text-center">
-            <h1 className="text-white text-4xl">Profile</h1>
-            <p className="text-white text-xl mt-2">John Doe</p>
-            <p className="text-white text-xl mt-2">Software Engineer</p>
-          </div>
-        </section>
-        <section
-          id="projects"
-          className="h-screen flex items-center justify-center"
-        >
-          <div className="text-center">
-            <h1 className="text-white text-4xl mb-8">Projects</h1>
-            <ul className="space-y-4">
-              <li className="text-white text-xl">Project 1: Description</li>
-              <li className="text-white text-xl">Project 2: Description</li>
-              <li className="text-white text-xl">Project 3: Description</li>
-              <li className="text-white text-xl">Project 4: Description</li>
-            </ul>
-          </div>
-        </section>
-        <section
-          id="experience"
-          className="h-screen flex items-center justify-center"
-        >
-          <div className="text-center">
-            <h1 className="text-white text-4xl mb-8">Experience</h1>
-            <ul className="space-y-4">
-              <li className="text-white text-xl">
-                Company A: Job Title (Year - Year)
-              </li>
-              <li className="text-white text-xl">
-                Company B: Job Title (Year - Year)
-              </li>
-              <li className="text-white text-xl">
-                Company C: Job Title (Year - Year)
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section id="cv" className="h-screen flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-white text-4xl mb-8">Curriculum Vitae</h1>
-            <p className="text-white text-xl">
-              Download my CV:{" "}
-              <a
-                href="/path-to-your-cv.pdf"
-                className="text-blue-500 underline"
-              >
-                Click Here
-              </a>
-            </p>
-          </div>
-        </section>
-      </main>
+      {/* <main className="flex-grow mt-14"> */}
+      <section
+        id="home"
+        className="flex items-center justify-center py-12 mt-20 mb-14"
+      >
+        <div className="bg-gray-800 rounded-lg shadow-lg p-60 w-full max-w-7xl mx-auto text-center">
+          <img
+            src={profileImage}
+            alt="Profile"
+            className="rounded-full w-32 h-32 mx-auto mb-4"
+          />
+          <h1 className="text-white text-4xl">Home Page</h1>
+          <p className="text-white text-xl mt-2">Software Engineer</p>
+        </div>
+      </section>
+      <section>
+        <Profile />
+      </section>
+      <section>
+        <Projects />
+      </section>
+      <section>
+        <Experience />
+      </section>
+      <section>
+        <CV />
+      </section>
+      {/* </main> */}
       <Footer />
     </div>
   );
