@@ -17,13 +17,22 @@ const Home: React.FC = () => {
         id="home"
         className="flex items-center justify-center py-12 mt-20 mb-14"
       >
-        <div className="bg-gray-800 rounded-lg shadow-lg p-60 w-full max-w-7xl mx-auto text-center">
+        {/* <div className="bg-gray-800 rounded-lg shadow-lg p-60 w-full max-w-7xl mx-auto text-center">
           <img
             src={profileImage}
             alt="Profile"
             className="rounded-full w-32 h-32 mx-auto mb-4"
           />
-          <h1 className="text-white text-4xl">Home Page</h1>
+          <h1 className="text-white text-4xl text-center mx-auto">Home Page</h1>
+          <p className="text-white text-xl mt-2">Software Engineer</p>
+        </div> */}
+        <div className="flex flex-col items-center justify-center h-screen">
+          <img
+            src={profileImage}
+            alt="Profile"
+            className="rounded-full w-32 h-32 mx-auto mb-4"
+          />
+          <h1 className="text-white text-4xl text-center mx-auto">Home Page</h1>
           <p className="text-white text-xl mt-2">Software Engineer</p>
         </div>
       </section>

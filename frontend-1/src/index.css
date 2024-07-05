@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+
+/* body {
   @apply bg-custom-bg;
+} */
+
+/* body {
+  @apply bg-custom-gradient;
+} */
+
+body {
+  @apply bg-gradient-to-tl from-indigo-800 to-fuchsia-700;
 }
 
 /* body {

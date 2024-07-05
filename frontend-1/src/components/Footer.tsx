@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -30,14 +30,6 @@ const Footer: React.FC = () => {
             className="hover:text-gray-400"
           >
             <FaLinkedin size={24} />
-          </a>
-          <a
-            href="https://twitter.com/your-twitter-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400"
-          >
-            <FaTwitter size={24} />
           </a>
         </div>
       </div>

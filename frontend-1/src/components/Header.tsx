@@ -101,13 +101,13 @@ const Header = () => {
             CV
           </ScrollLink>
         </div>
-        <button
+        {/* <button
           onClick={handleLogout}
           // className="bg-red-500 px-4 py-2 rounded text-white"
           className="bg-blue-500 rounded px-4 py-2 text-white"
         >
           Logout
-        </button>
+        </button> */}
       </nav>
     </header>
   );
